@@ -17,13 +17,13 @@
                     <button class="main-nav__toggele">Главное меню</button>
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Книги</a>
+                            <a class="main-nav__link" href="#">Книги</a>
                         </li>
                         <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Рекомендации</a>
+                            <a class="main-nav__link" href="#">Рекомендации</a>
                         </li>
                         <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Контакты</a>
+                            <a class="main-nav__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -43,22 +43,35 @@
             <div class="contact__map"></div>
         </div>
         <div class="contact-form">
-            <h2 class="contact-form__title">Есть вопросы?</h2>
-            <p class="contact-form__subtitle">Напишите нам на почту. Отвечаем в течении дня</p>
-            <div class="contact-form__case">
-                <div class="contact-form__field-text">Ваша почта</div>
-                <div class="contact-form__field-text">Сообщение</div>
-                <div class="contact-form__field-action">
-                    <button class="contact-form__btn">Отправить</button>
-                </div>
-            <div class="contact-form__field-checkbox">
-              <span>Я согласен(а) <a href="#" class="contact-form__link">с политикой конфиденциальности</a> и <a href="#" class="contact-form__link">правилами обработки данных</a></span>
+            <div class="contact-form__inner">
+                <h2 class="contact-form__title">Есть вопросы?</h2>
+                <p class="contact-form__subtitle">Напишите нам на почту. Отвечаем в течении дня</p>
             </div>
+            <div class="contact-form__case">
+                <form action="">
+                      <div class="contact-form__field-text">
+                          <input type="email" id="email">
+                          <label for="email">Ваша почта</label>
+                      </div>
+                      <div class="contact-form__field-text">
+                          <input type="text" id="text">
+                          <label for="text">Сообщение</label>
+                      </div>
+                      <div class="contact-form__field-action">
+                          <button class="contact-form__btn">Отправить</button>
+                      </div>
+                      <div class="contact-form__field-checkbox">
+                          <input type="checkbox" name="checkbox">
+                          <span>Я согласен(а) <a href="#" class="contact-form__link">с политикой конфиденциальности</a> и <a href="#" class="contact-form__link">правилами обработки данных</a></span>
+                      </div>
+                </form>
             </div>
         </div>
-        <div class="contact-banner">
-            <h2 class="contact-banner__title">Мы открыли для вас уютную библиотеку</h2>
-            <p class="contact-banner__subtitle">Приходите к нам по адресу Никитская 10, каждый день с 12:00 до 18:00</p>
+        <div class="page-banner">
+            <div class="page-banner__inner">
+                <h2 class="page-banner__title">Мы открыли для вас уютную библиотеку</h2>
+                <p class="page-banner__subtitle">Приходите к нам по адресу Никитская 10, каждый день с 12:00 до 18:00</p>
+            </div>
         </div>
         <footer class="footer">
             <div class="footer__inner">
@@ -67,13 +80,13 @@
                 <nav class="main-nav">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">книги</a>
+                            <a class="main-nav__link" href="#">Книги</a>
                         </li>
                         <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">рекомендации</a>
+                            <a class="main-nav__link" href="#">Рекомендации</a>
                         </li>
                         <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">контакты</a>
+                            <a class="main-nav__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
