@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js  page">
   <head>
     <meta charset="UTF-8">
-     <title>Book Store - Каточка кники</title>
+     <title>Book Store - Карточка товара</title>
      <link rel="stylesheet" type="text/css" href="css/style.css">
      <script>
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -11,49 +11,128 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-          <a class="logo"><img src="#" alt="Book Store Logo"></a>
-          <p class="time">c 9:00 до 19:00</p>
-          <nav class="main-nav">
-            <button class="main-nav__toggele">Главное меню</button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Книги</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Рекомендации</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+        <a class="logo"><img src="#" alt="Book Store Logo"></a>
+        <div class="time">c 9:00 до 19:00</div>
+        <nav class="main-nav">
+          <button class="main-nav__toggele">Главное меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Книги</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Рекомендации</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <sectoin class="product">
+
+      <div class="product__header">
+        <h1 class="product__name">Супер-потребители</h1>
+        <div class="product__autor">Эдди Юн</div>
+        <div class="product__lead">
+          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
         </div>
-      </header>
-      <div class="page-banner">
-        <div class="page-banner__inner">
-                <h2 class="page-banner__title">Мы открыли для вас уютную библиотеку</h2>
-                <p class="page-banner__subtitle">Приходите к нам по адресу Никитская 10, каждый день с 12:00 до 18:00</p>
-            </div>
+      </div>
+
+      <div class="product__img-wrap">
+        <div class="product__img-main">
+        <img src="#" alt="Обложка книги Супер-потребители">
         </div>
-        <footer class="footer">
-            <div class="footer__inner">
-                <a class="logo"><img src="#" alt="Book Store Logo"></a>
-                <p class="time">c 9:00 до 19:00</p>
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Книги</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Рекомендации</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
+        <div class="product__img-pages">
+          <ul class="product__list">
+            <li class="product__item"><a href="#"><img src="#" alt="Картинка страницы кники"></a></li>
+            <li class="product__item"><a href="#"><img src="#" alt="Картинка страницы кники"></a></li>
+            <li class="product__item"><a href="#"><img src="#" alt="Картинка страницы кники"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product__info">
+
+      </div>
+
+      <div class="product__descr">
+        <div class="product__descr-title">Короткое описание</div>
+        <div class="product__descr-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus necessitatibus ullam, dolor minima harum dolores, cum quod doloribus recusandae totam.</p>
+        </div>
+        <button class="product__descr-more" type="button">Показать больше</button>
+        <div class="product__descr-more-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, fugiat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, fugiat.</p>
+        </div>
+        <div class="product__descr-social social-module">
+          <button class="social-module__item">
+            <svgclass="social-module__icon"></svg>
+            <span class="social-module__num">10</span>
+          </button>
+          <button class="social-module__item">
+            <svgclass="social-module__icon"></svg>
+            <span class="social-module__num">10</span>
+          </button>
+          <button class="social-module__item">
+            <svgclass="social-module__icon"></svg>
+            <span class="social-module__num">10</span>
+          </button>
+          <button class="social-module__item">
+            <svgclass="social-module__icon"></svg>
+            <span class="social-module__num">10</span>
+          </button>
+        </div>
+      </div>
+    </sectoin>
+    <section class="recommendation">
+      <div class="recommendation__header">
+        <div class="recommendation__header-title">Наши новинки</div>
+        <div class="recommendation__header-link"><a href="#">Все новинки</a></div>
+      </div>
+      <div class="recommendation__list-wrap">
+        <div class="recommendation__list">
+          <div class="recommendation-card-mini">
+            <h2 class="recommendation-mini__title">
+              <a href="#">Lorem ipsum.</a>
+            </h2>
+            <a href="#" class="recommendation-card-mini__img-wrap">
+                <img src="#" class="recommendation-card-mini__img">
+            </a>
+            <p class="recommendation-card-mini__descr">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-banner">
+      <div class="page-banner__inner">
+        <h2 class="page-banner__title">Мы открыли для вас уютную библиотеку</h2>
+        <div class="page-banner__subtitle">
+          <p>Приходите к нам по адресу Никитская 10, каждый день с 12:00 до 18:00</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner">
+        <a class="logo"><img src="#" alt="Book Store Logo"></a>
+        <div class="time">c 9:00 до 19:00</div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Книги</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Рекомендации</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
