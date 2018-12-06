@@ -1,6 +1,6 @@
 const bookCardTemplate = {
   wrap: '.j-cards',
-  tag: 'div',
+  tag: 'article',
   tagClass: 'products-card-mini',
   setContent: function(data) {
     return `<h2 class="products-card-mini__title">

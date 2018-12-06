@@ -1,5 +1,3 @@
-
-
 import createElement from './createElement.js';
 
 function insertElement(array, template) {
@@ -9,7 +7,6 @@ function insertElement(array, template) {
     const book = createElement(item, template);
     wrap.appendChild(book);
   });
-
 
 };
 

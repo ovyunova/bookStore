@@ -5,7 +5,7 @@
     <title>Book Store</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>
-        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
   </head>
   <body>
@@ -32,33 +32,35 @@
     <div class="promo">
       <div class="promo__inner">
         <div class="slider">
-            <div class="slider__inner">
-              <arcticle class="slider__item">
-                <p class="slider__item-subtitle">Новое поступление книги «Симпсоны  и их математические секреты»</p>
-                <h2 class="slider__item-title">Для поклонников сериала «Симпсоны»  и для всех, кому интересна </h2>
-                <p class="slider__item-descr">Хочу узнать о книге больше</p>
-                <a href="#">
-                    <img src="#" class="slider__item-img">
-                </a>
-              </arcticle>
-              <arcticle class="slider__item">
-                <p class="slider__item-subtitle">Новое поступление книги «45 татуировок менеджера»</p>
-                <h2 class="slider__item-title">Книга про правила российского руководителя</h2>
-                <p class="slider__item-descr">Хочу узнать о книге больше</p>
-                <a href="#">
-                    <img src="#" class="slider__item-img">
-                </a>
-              </arcticle>
-              <arcticle class="slider__item">
-                  <p class="slider__item-subtitle">Узнайте как обучить персонал с новой книгой «Пятая дисциплина»</p>
-                  <h2 class="slider__item-title">Искусство и практика обучающейся организации</h2>
-                  <p class="slider__item-descr">Хочу узнать о книге больше</p>
-                  <a href="#">
-                      <img src="#" class="slider__item-img">
-                  </a>
-              </arcticle>
-            </div>
+          <div class="slider__inner">
+            <arcticle class="slider__item">
+              <p class="slider__item-subtitle">Новое поступление книги «Симпсоны  и их математические секреты»</p>
+              <h2 class="slider__item-title">Для поклонников сериала «Симпсоны»  и для всех, кому интересна </h2>
+              <p class="slider__item-descr">
+                <a href="#">Хочу узнать о книге больше</a>
+              </p>
+              <a href="#">
+                <img src="#" class="slider__item-img">
+              </a>
+            </arcticle>
+            <arcticle class="slider__item">
+              <p class="slider__item-subtitle">Новое поступление книги «45 татуировок менеджера»</p>
+              <h2 class="slider__item-title">Книга про правила российского руководителя</h2>
+              <p class="slider__item-descr">Хочу узнать о книге больше</p>
+              <a href="#">
+                <img src="#" class="slider__item-img">
+              </a>
+            </arcticle>
+            <arcticle class="slider__item">
+              <p class="slider__item-subtitle">Узнайте как обучить персонал с новой книгой «Пятая дисциплина»</p>
+              <h2 class="slider__item-title">Искусство и практика обучающейся организации</h2>
+              <p class="slider__item-descr">Хочу узнать о книге больше</p>
+              <a href="#">
+                <img src="#" class="slider__item-img">
+              </a>
+            </arcticle>
           </div>
+        </div>
       </div>
     </div>
     <section class="catalog">
@@ -90,10 +92,12 @@
           </div>
         </div>
         <div class="catalog__paginator">
-          <span class="catalog__paginator-item">1</span>
-          <span class="catalog__paginator-item">2</span>
-          <span class="catalog__paginator-item">3</span>
-          <span class="catalog__paginator-item">4</span>
+          <div class="catalog__pagginator-list">
+            <span class="catalog__paginator-item">1</span>
+            <span class="catalog__paginator-item">2</span>
+            <span class="catalog__paginator-item">3</span>
+            <span class="catalog__paginator-item">4</span>
+          </div>
         </div>
     </section>
     <section class="delivery">
@@ -103,27 +107,23 @@
       </div>
       <div class="delivery__item">
         <div class="delivery__item-img">
-        <img src="#" alt="Иконка книги">
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, atque.</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, atque.</span>
         </div>
         <div class="delivery__item-img">
-          <img src="#" alt="Иконка доставки">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, atque.</span>
-          </div>
+        </div>
         <div class="delivery__item-img">
-          <img src="#" alt="Иконка подарка">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, atque.</span>
-          </div>
+        </div>
         <div class="delivery__item-img">
-          <img src="#" alt="Иконка маршурта">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, atque.</span>
         </div>
       </div>
     </section>
     <section class="advice">
       <div class="advice__header">
-        <div class="advice__header-title">Наши новинки</div>
-        <div class="advice__header-link"><a href="#">Все новинки</a></div>
+        <h2 class="advice__header-title">Наши новинки</h2>
+        <a href="#" class="advice__header-link">Все новинки</a>
       </div>
       <div class="advice__list-wrap">
         <div class="advice__list">
@@ -135,7 +135,7 @@
                 <img src="#" class="advice-card-mini__img" alt="Картинка новинки">
             </a>
             <p class="advice-card-mini__descr">Lorem ipsum dolor sit amet.</p>
-          </div>
+          </div
         </div>
       </div>
     </section>

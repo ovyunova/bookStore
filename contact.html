@@ -41,30 +41,28 @@
         </ul>
       </div>
       <div class="contact__map"></div>
-      <div class="contact__form">
+      <div class="contact__form form">
         <div class="form__header">
           <h2 class="form__title">Есть вопросы?</h2>
           <div class="form__subtitle">
             <p>Напишите нам на почту. Отвечаем в течении дня</p>
           </div>
         </div>
-        <div class="form__wrap">
-          <form class="form" action="">
-            <div class="field-text">
-              <input type="text" class="field-text__input" placeholder="Ваша почта">
-            </div>
-            <div class="field-text">
-              <input type="text" class="field-text__input" placeholder="Сообщение">
-            </div>
-            <div class="field-checkbox">
-              <input type="checkbox" class="field-checkbox__input">
-              <span class="field-checkbox__text">Я согласен(а) <a href="#">с политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a></span>
-            </div>
-            <div class="field-action">
-              <button class="btn">Отправить</button>
-            </div>
-          </form>
-        </div>
+        <form class="form__wrap" action="">
+          <div class="field-text">
+            <input type="text" class="field-text__input" placeholder="Ваша почта">
+          </div>
+          <div class="field-text">
+            <input type="text" class="field-text__input" placeholder="Сообщение">
+          </div>
+          <label class="field-checkbox">
+            <input type="checkbox" class="field-checkbox__input">
+            <span class="field-checkbox__text">Я согласен(а) <a href="#">с политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a></span>
+          </label>
+          <div class="field-action">
+            <button class="btn">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <section class="page-banner">

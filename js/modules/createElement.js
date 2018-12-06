@@ -1,11 +1,9 @@
 function createElement (book, template) {
-    const div = document.createElement(template.tag);
-    div.classList.add(template.tagClass);
+    const article = document.createElement(template.tag);
+    article.classList.add(template.tagClass);
+    article.innerHTML = template.setContent(book);
 
-    div.innerHTML = template.setContent(book);
-    // let elem = ``;
-
-    return div;
+    return article;
 };
 
 export default createElement;
