@@ -5,8 +5,14 @@ function insertElement(array, template) {
 
   array.forEach( item => {
     const book = createElement(item, template);
+    const wrap = document.querySelector(template.wrap);
+
     wrap.appendChild(book);
+
+    // console.log();
+
   });
+
 
 };
 
