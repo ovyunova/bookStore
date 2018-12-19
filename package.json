@@ -8,7 +8,7 @@
     "lint-staged": "lint-staged",
     "precommit": "lint-staged"
   },
-    "lint-staged": {
+  "lint-staged": {
     "*.css": "stylelint",
     "*.scss": "stylelint --syntax=scss"
   },
@@ -40,5 +40,8 @@
     "stylelint": "^9.9.0",
     "webpack": "^4.27.1",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

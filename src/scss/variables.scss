@@ -5,11 +5,13 @@ $second-color-light:  #130f23;
 $third-color:         #e41284;
 $third-color-light:   #f4d4e4;
 $link-color:          #1a1ff7;
+$link-color-hover:    #6c73ff;
 
 $gray-lighter:        #ededed;
 $gray-light:          #ececec;
 $gray-dark:           #dddddd;
-$gray-darken:         #c6c6c6;
+$gray-darker:         #c6c6c6;
+$gray-darken:         #828282;
 
 $text-color:          $second-color;
 
@@ -17,6 +19,6 @@ $font-family:         "Montserrat", sans-serif;
 $font-size:           12px;
 $line-height:         1.4;
 
-$screen-xs:           320px;
+$screen-xs:           360px;
 $screen-sm:           768px;
 $screen-lg:           1200px;
