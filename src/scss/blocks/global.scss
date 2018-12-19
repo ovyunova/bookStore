@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: auto;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-family-main;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #180000;
+}
+
+a {
+  color: #180000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #180000;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
