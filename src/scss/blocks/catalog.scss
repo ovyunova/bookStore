@@ -1,0 +1,54 @@
+.catalog {
+
+  &__title {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  &__tabs-wrap {
+    background-color: $main-color-dark;
+  }
+
+  &__tabs {
+    display: flex;
+    margin: 0 7%;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 0;
+  }
+
+  &__tab-item {
+    padding-right: 30px;
+    // line-height: $line-height + 26;
+  }
+
+  &__tab-link {
+  }
+
+  &__list-wrap {
+  }
+
+  &__list {
+  }
+
+  &__paginator {
+  }
+}
+
+.j-tabs {
+}
+
+.j-cards {
+}
+
+.paginator {
+
+  &__list {
+  }
+
+  &__list-item {
+  }
+}
