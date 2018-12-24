@@ -16,6 +16,8 @@ body {
 }
 
 a {
+  font-size: $font-size + 4;
+  line-height: $line-height + 26;
   color: $link-color;
   text-decoration: none;
   margin: 0;
