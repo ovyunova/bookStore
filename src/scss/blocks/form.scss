@@ -1,0 +1,110 @@
+.contact {
+
+  &__form {
+    position: relative;
+    border: 10px solid $main-color-dark;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 50px;
+      background-color: $main-color;
+      width: 30%;
+      height: 20px;
+
+      @media (min-width: $screen-sm) {
+        width: 60%;
+        height: 20px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 40%;
+        height: 20px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 99%;
+      right: 70px;
+      background-color: $main-color;
+      width: 30%;
+      height: 20px;
+
+      @media (min-width: $screen-sm) {
+        width: 40%;
+        height: 20px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 60%;
+        height: 20px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: -3%;
+      margin-right: -3%;
+    }
+  }
+}
+
+.form {
+
+  &__header {
+    margin: 0 4%;
+    padding-bottom: 40px;
+
+    @media (min-width: $screen-sm) {
+      margin: 0 2%;
+    }
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: $font-size + 18;
+    line-height: $line-height + 46;
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    font-size: $font-size + 4;
+    line-height: $line-height;
+  }
+
+  &__wrap {
+    margin: 0 7%;
+  }
+}
+
+.field-text {
+
+  &__input {
+  }
+}
+
+.field-checkbox {
+
+  &__input {
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-size: $font-size + 2;
+    line-height: $line-height;
+  }
+}
+
+.field-action {
+}
+
+.btn {
+}
