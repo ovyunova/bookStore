@@ -13,6 +13,8 @@
     grid-area: recommendation__inner;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
   }
 
   &__title {
@@ -24,6 +26,8 @@
   }
 
   &__blog {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   &__blog-title {
@@ -36,6 +40,10 @@
   }
 
   &__book {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 
   &__book-title {
@@ -45,12 +53,20 @@
   }
 
   &__foto {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
   }
 
   &__foto-title {
   }
 
   &__vote {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 
   &__vote-title {
@@ -63,15 +79,23 @@
   }
 
   &__news {
-  }
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 
-  &__news-title {
-  }
+    &__news-title {
+    }
 
-  &__news-text {
+    &__news-text {
+    }
   }
 
   &__old {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
 
   &__old-title {
