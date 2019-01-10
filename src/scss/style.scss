@@ -1,5 +1,5 @@
 @import 'node_modules/normalize.css/normalize';
-@import 'node_modules/slick-carousel/slick/slick';
+@import 'node_modules/slick-carousel/slick/slick.scss';
 @import 'variables';
 @import 'fonts';
 @import 'blocks/global';
@@ -9,4 +9,6 @@
 @import 'blocks/banner';
 @import 'blocks/contacts';
 @import 'blocks/form';
+@import 'blocks/recommendation';
 @import 'blocks/footer';
+

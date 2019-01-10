@@ -1,0 +1,87 @@
+.recommendation {
+  margin: 0 7%;
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  /* stylelint-disable */
+  grid-template-areas:
+    "recommendation__title recommendation__title"
+    "recommendation__inner product__list-wrap";
+  /* stylelint-enable */
+  grid-column-gap: 25px;
+
+  &__inner {
+    grid-area: recommendation__inner;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__title {
+    grid-area: recommendation__title;
+    font-family: $font-family;
+    font-size: $font-size + 38;
+    line-height: $line-height + 46;
+    font-weight: 700;
+  }
+
+  &__blog {
+  }
+
+  &__blog-title {
+  }
+
+  &__blog-text {
+  }
+
+  &__blog-link {
+  }
+
+  &__book {
+  }
+
+  &__book-title {
+  }
+
+  &__book-text {
+  }
+
+  &__foto {
+  }
+
+  &__foto-title {
+  }
+
+  &__vote {
+  }
+
+  &__vote-title {
+  }
+
+  &__vote-text {
+  }
+
+  &__vote-btn {
+  }
+
+  &__news {
+  }
+
+  &__news-title {
+  }
+
+  &__news-text {
+  }
+
+  &__old {
+  }
+
+  &__old-title {
+  }
+
+  &__old-text {
+  }
+}
+
+.product__list-wrap {
+  grid-area: product__list-wrap;
+}
+
