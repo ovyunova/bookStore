@@ -31,45 +31,48 @@ a {
 
 .main-nav {
   display: block;
+  margin-right: -7px;
+  margin-top: 6px;
 
   @media (min-width: $screen-sm) {
     display: block;
   }
 
   &__toggele {
-    background-image: url(img/icon_bascket.png);
-    background-repeat: no-repeat;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 37px;
+    position: relative;
+    border-color: #fff;
+    background-color: #fff;
 
     .toggele {
-      position: fixed;
+      position: absolute;
       top: 19px;
-      left: 87%;
+      left: 6px;
       width: 22px;
       height: 2px;
-      background: $second-color;
+      background: #1f1f1f;
       z-index: 5;
 
       &:before {
         content: '';
-        position: fixed;
-        top: 26px;
-        left: 87%;
+        position: absolute;
+        top: -8px;
+        left: 0;
         width: 22px;
         height: 2px;
-        background: $second-color;
+        background: #1f1f1f;
         z-index: 5;
       }
 
       &:after {
         content: '';
-        position: fixed;
-        top: 33px;
-        left: 87%;
+        position: absolute;
+        top: 8px;
+        left: 0;
         width: 22px;
         height: 2px;
-        background: $second-color;
+        background: #1f1f1f;
         z-index: 5;
       }
     }
