@@ -2,6 +2,7 @@
 <html lang="ru" class="no-js  page">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Store - Карточка товара</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>
@@ -11,19 +12,27 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="logo"><img src="#" alt="Book Store Logo"></a>
+        <a class="logo"><img src="img/bs_logo.png" alt="Book Store Logo" width="127" height="14"></a>
         <div class="time">c 9:00 до 19:00</div>
         <nav class="main-nav">
-          <button class="main-nav__toggele">Главное меню</button>
+          <button class="main-nav__basket">
+            <div class="basket">Кнопка корзины</div>
+          </button>
+          <button class="main-nav__toggele">
+            <div class="toggele">Главное меню</div>
+          </button>
+          <button class="main-nav__callback">
+            <div class="callback">Кнопка обратного звонка</div>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Книги</a>
+              <a class="main-nav__link" href="/item-page.html">Книги</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Рекомендации</a>
+              <a class="main-nav__link" href="/recommendation.html">Рекомендации</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+              <a class="main-nav__link" href="/contact.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -138,23 +147,23 @@
     </section>
     <footer class="footer">
       <div class="footer__inner">
-        <a class="logo"><img src="#" alt="Book Store Logo"></a>
+        <a class="footer__logo"><img src="img/bs_logo.png" alt="Book Store Logo" width="127" height="14"></a>
         <div class="time">c 9:00 до 19:00</div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Книги</a>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="/item-page.html">Книги</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Рекомендации</a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="/recommendation.html">Рекомендации</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="/contact.html">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>

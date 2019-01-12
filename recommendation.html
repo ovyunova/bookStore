@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Book Store - Рекомендации</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -11,28 +12,36 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="logo"><img src="#" alt="Book Store Logo"></a>
+        <a class="logo"><img src="img/bs_logo.png" alt="Book Store Logo" width="127" height="14"></a>
         <div class="time">c 9:00 до 19:00</div>
         <nav class="main-nav">
-          <button class="main-nav__toggele">Главное меню</button>
+          <button class="main-nav__basket">
+            <div class="basket">Кнопка корзины</div>
+          </button>
+          <button class="main-nav__toggele">
+            <div class="toggele">Главное меню</div>
+          </button>
+          <button class="main-nav__callback">
+            <div class="callback">Кнопка обратного звонка</div>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Книги</a>
+              <a class="main-nav__link" href="/item-page.html">Книги</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Рекомендации</a>
+              <a class="main-nav__link" href="/recommendation.html">Рекомендации</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+              <a class="main-nav__link" href="/contact.html">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="recommendation">
+      <h1 class="recommendation__title">Наши рекомендации</h1>
       <div class="recommendation__inner">
-        <h1 class="recommendation__title">Наши рекомендации</h1>
-        <div href="#" class="recommendation__blog">
+        <div class="recommendation__blog">
           <p class="recommendation__blog-title">Новая статья в блоге</p>
           <p class="recommendation__blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ut!</p>
           <a class="recommendation__blog-link">Читать статью</a>
@@ -58,11 +67,11 @@
           <p class="recommendation__old-text">Lorem ipsum dolor sit amet.</p>
         </a>
       </div>
-      <div class="advice__header">
-        <div class="advice__header-subtitle">Книга в продарок!</div>
-        <div class="advice__header-text">Lorem</div>
-      </div>
       <div class="product__list-wrap">
+        <div class="advice__header">
+          <div class="advice__header-subtitle">Книга в продарок!</div>
+          <div class="advice__header-text">Lorem</div>
+        </div>
         <div class="product__list">
           <div class="product-card-mini">
             <h2 class="product-mini__title">
@@ -86,23 +95,23 @@
     </section>
     <footer class="footer">
       <div class="footer__inner">
-        <a class="logo"><img src="#" alt="Book Store Logo"></a>
+        <a class="footer__logo"><img src="img/bs_logo.png" alt="Book Store Logo" width="127" height="14"></a>
         <div class="time">c 9:00 до 19:00</div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Книги</a>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="/item-page.html">Книги</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Рекомендации</a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="/recommendation.html">Рекомендации</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="/contact.html">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
