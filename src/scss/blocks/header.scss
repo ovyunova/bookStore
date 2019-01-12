@@ -5,11 +5,21 @@
   &__inner {
     display: flex;
     margin: 0 7%;
+    align-items: baseline;
+
+    @media (min-width: $screen-sm) {
+      margin: 0 5%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 7%;
+    }
   }
 }
 
 a {
   line-height: 0;
+  color: #000;
 }
 
 .logo {
@@ -26,6 +36,14 @@ a {
 
   @media (min-width: $screen-sm) {
     display: block;
+    margin-top: 0;
+    margin-right: 10%;
+    margin-left: 20px;
+    padding-top: 17px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-right: 48%;
   }
 }
 
@@ -35,7 +53,9 @@ a {
   margin-top: 6px;
 
   @media (min-width: $screen-sm) {
-    display: block;
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   &__toggele {
@@ -44,6 +64,7 @@ a {
     position: relative;
     border-color: #fff;
     background-color: #fff;
+    font-size: 0;
 
     .toggele {
       position: absolute;
@@ -82,17 +103,80 @@ a {
     }
   }
 
+  &__basket {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+    position: relative;
+
+    @media (min-width: $screen-sm) {
+      order: 2;
+    }
+
+    .basket {
+      content: '';
+      position: absolute;
+      left: 12px;
+      right: 35px;
+      top: 9px;
+      height: 30px;
+      width: 30px;
+      background-image: url(../img/icon_bascket.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__callback {
+    display: none;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+    position: relative;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      order: 3;
+    }
+
+    .callback {
+      content: '';
+      position: absolute;
+      left: 12px;
+      right: 35px;
+      top: 9px;
+      height: 30px;
+      width: 30px;
+      background-image: url(../img/button_phone.png);
+      background-repeat: no-repeat;
+    }
+  }
+
   &__list {
     display: none;
 
     @media (min-width: $screen-sm) {
-      display: block;
+      display: flex;
     }
   }
 
   &__item {
+    font-family: $font-family;
+    font-size: $font-size + 2;
+    font-weight: 700;
+    text-transform: lowercase;
+
+    @media (min-width: $screen-sm) {
+      padding-right: 10px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-right: 20px;
+    }
   }
 
   &__link {
+
   }
 }

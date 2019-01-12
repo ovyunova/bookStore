@@ -4,6 +4,8 @@
 
   &__inner {
     margin: 0 7%;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -14,7 +16,8 @@
 
 .footer .time {
   display: block;
-  padding-top: 5px;
+  position: absolute;
+  padding-top: 40px;
   font-family: $font-family;
   font-size: $font-size + 2;
   color: $gray-darken;
@@ -24,12 +27,27 @@
   }
 }
 
-.main-nav {
+.footer-nav {
+  margin-right: 0;
 
   &__list {
+
   }
 
   &__item {
+    font-family: $font-family;
+    font-size: $font-size + 2;
+    font-weight: 700;
+    text-transform: lowercase;
+
+    &:first-child,
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:last-child {
+      padding-top: 18px;
+    }
   }
 
   &__link {
