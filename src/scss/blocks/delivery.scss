@@ -1,0 +1,109 @@
+.delivery {
+
+  &__inner {
+    position: relative;
+    border: 10px solid $main-color-dark;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 50px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -5%;
+      left: 50px;
+      background-color: $main-color;
+      width: 30%;
+      height: 20px;
+
+      @media (min-width: $screen-sm) {
+        width: 60%;
+        height: 20px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 40%;
+        height: 20px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 99%;
+      right: 70px;
+      background-color: $main-color;
+      width: 30%;
+      height: 20px;
+
+      @media (min-width: $screen-sm) {
+        width: 40%;
+        height: 20px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 60%;
+        height: 20px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+
+  &__header {
+    margin: 0 4%;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: $font-size + 18;
+    line-height: $line-height + 16;
+    font-weight: 700;
+
+    @media (min-width: $screen-sm) {
+      line-height: $line-height + 26;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    font-size: $font-size + 4;
+    font-weight: 500;
+    text-transform: lowercase;
+  }
+
+  &__item {
+    margin: 0 4%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item-img {
+    font-family: $font-family;
+    font-size: $font-size + 2;
+    font-weight: 500;
+    text-align: center;
+
+    @media (min-width: $screen-sm) {
+      width: 50%;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 25%;
+    }
+  }
+}
