@@ -46,6 +46,7 @@ exports.copyHTML = copyHTML;
 function copyVendorsJs() {
   return src([
       './node_modules/picturefill/dist/picturefill.min.js',
+      './src/js/map.js'
     ])
     .pipe(plumber())
     .pipe(dest(`${dir.build}js/`));

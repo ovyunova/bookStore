@@ -12,6 +12,3 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 // Ждем полной загрузки страницы, после этого запускаем initMap()
 google.maps.event.addDomListener(window, "load", initMap);
-
-
-export default initMap;

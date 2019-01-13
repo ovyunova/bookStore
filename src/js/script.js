@@ -1,7 +1,7 @@
 import insertElement from './modules/insertElement.js';
 import bookCardTemplate from './modules/booksCardTemplate.js';
 import sendRequest from './modules/sendRequest.js'
-import initMap from './modules/map.js'
+// import initMap from './modules/map.js'
 
     // if (document.querySelector(bookCardTemplate.wrap)) {
     //   insertElement(data.items, bookCardTemplate);
@@ -94,3 +94,7 @@ function createDataAjax () {
 //     }
 //   };
 // };
+
+
+
+
