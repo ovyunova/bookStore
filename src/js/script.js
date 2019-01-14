@@ -1,3 +1,5 @@
+// import jQuery from "/node_modules/jquery/src/jquery.js";
+// import slick from "/node_modules/slick-carousel/slick/slick.min.js";
 import insertElement from './modules/insertElement.js';
 import bookCardTemplate from './modules/booksCardTemplate.js';
 import sendRequest from './modules/sendRequest.js'
@@ -95,6 +97,10 @@ function createDataAjax () {
 //   };
 // };
 
-
+$('.slider__inner').slick({
+  arrows: true,
+  autoplay: false,
+  speed: 300
+});
 
 

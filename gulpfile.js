@@ -46,7 +46,9 @@ exports.copyHTML = copyHTML;
 function copyVendorsJs() {
   return src([
       './node_modules/picturefill/dist/picturefill.min.js',
-      './src/js/map.js'
+      './src/js/map.js',
+      // './node_modules/jquery/src/jquery.js',
+      './node_modules/slick-carousel/slick/slick.min.js'
     ])
     .pipe(plumber())
     .pipe(dest(`${dir.build}js/`));
@@ -87,9 +89,9 @@ function javascript() {
           }
         ]
       },
-      // externals: {
-      //   jquery: 'jQuery'
-      // }
+      externals: {
+        jquery: 'jQuery'
+      }
     }))
   .pipe(dest(`${dir.build}js`))
   .pipe(uglify())
