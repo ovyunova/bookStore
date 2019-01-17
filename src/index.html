@@ -8,6 +8,8 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <header class="page-header">
@@ -127,15 +129,35 @@
           </div>
           <div class="delivery__item">
             <div class="delivery__item-img">
+              <div class="delivery__item-icon">
+                <svg width="50" height="40">
+                  <use xlink:href="img/sprite.svg#icon_book"></use>
+                </svg>
+              </div>
               <span>Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</span>
             </div>
             <div class="delivery__item-img">
+              <div class="delivery__item-icon">
+                <svg width="70" height="40">
+                  <use xlink:href="img/sprite.svg#icon_delivery"></use>
+                </svg>
+              </div>
               <span>Бесплатно доставляем заказы от 3 000  по всей России.</span>
             </div>
             <div class="delivery__item-img">
+              <div class="delivery__item-icon">
+                <svg width="60" height="40">
+                  <use xlink:href="img/sprite.svg#icon_box"></use>
+                </svg>
+              </div>
               <span>Мы подарим вам «Набор читателя» и добавим в посылку.</span>
             </div>
             <div class="delivery__item-img">
+              <div class="delivery__item-icon">
+                <svg width="70" height="48">
+                  <use xlink:href="img/sprite.svg#icon_map"></use>
+                </svg>
+              </div>
               <span>Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу — бесплатно.</span>
             </div>
           </div>
@@ -153,7 +175,7 @@
               <a href="#">Lorem ipsum.</a>
             </h2>
             <a href="#" class="product-card-mini__img-wrap">
-              <img src="#" class="product-card-mini__img" alt="Картинка новинки">
+              <img src="img/books_all/komu-nuzhna-matematika.png" class="product-card-mini__img" alt="Картинка новинки">
             </a>
             <p class="product-card-mini__descr">Lorem ipsum dolor sit amet.</p>
           </div>

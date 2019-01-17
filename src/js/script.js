@@ -1,13 +1,15 @@
-// import jQuery from "/node_modules/jquery/src/jquery.js";
-// import slick from "/node_modules/slick-carousel/slick/slick.min.js";
+// import jquery from './node_modules/jquery/src/jquery.js';
+// import slick-carousel from './node_modules/slick-carousel/slick/slick.min.js';
 import insertElement from './modules/insertElement.js';
 import bookCardTemplate from './modules/booksCardTemplate.js';
 import sendRequest from './modules/sendRequest.js'
 // import initMap from './modules/map.js'
 
+
     // if (document.querySelector(bookCardTemplate.wrap)) {
     //   insertElement(data.items, bookCardTemplate);
     // }
+
 
 
 //объект данных для запроса
