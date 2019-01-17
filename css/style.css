@@ -594,41 +594,41 @@ a {
 
 .promo {
   margin: 0 7%;
-  height: 493px; }
+  padding-top: 30px; }
 
 .slider__inner {
-  position: relative; }
-
-.slider__item:before {
-  content: '';
-  position: absolute;
-  border: 10px solid #e8e8e8;
-  margin-top: 150px;
-  padding-bottom: 40px;
-  /* margin-left: -5%; */
-  /* margin-right: -2%; */
-  width: 250px;
-  height: 200px;
-  top: -55px;
-  /* left: 0; */
-  z-index: -3; }
+  position: relative;
+  padding-bottom: 100px; }
 
 .slider__item-subtitle {
-  position: relative;
-  top: 20px;
-  padding-left: 15px;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  font-size: 14px; }
+  font-size: 14px;
+  padding-bottom: 30px;
+  padding-left: 10px; }
   @media (min-width: 768px) {
     .slider__item-subtitle {
       font-size: 16px; } }
+
+.slider__wrap {
+  position: relative;
+  padding-top: 50px; }
+  .slider__wrap:before {
+    content: '';
+    position: absolute;
+    border: 10px solid #e8e8e8;
+    /* margin-left: -5%; */
+    /* margin-right: -2%; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -3; }
 
 .slider__item-title {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 30px;
-  padding-top: 60px;
   padding-left: 15px; }
   @media (min-width: 768px) {
     .slider__item-title {
@@ -652,7 +652,7 @@ a {
 
 .slick-arrow {
   position: absolute;
-  top: 400px;
+  top: 444px;
   left: 25%;
   font-size: 0;
   border-color: transparent;
