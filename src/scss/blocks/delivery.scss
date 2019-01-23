@@ -12,20 +12,19 @@
     &:before {
       content: '';
       position: absolute;
-      top: -5%;
-      left: 50px;
-      background-color: $main-color;
       width: 30%;
       height: 50px;
+      top: -25px;
+      left: 50px;
+      background-color: $main-color;
+
 
       @media (min-width: $screen-sm) {
         width: 60%;
-        height: 20px;
       }
 
       @media (min-width: $screen-lg) {
         width: 40%;
-        height: 20px;
       }
     }
 

@@ -1,0 +1,36 @@
+.footer-nav {
+  margin-right: 0;
+
+  &__list {
+    display: flex;
+  }
+
+  .visible {
+    display: block;
+    padding-top: 16px;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 0;
+    }
+  }
+
+  &__item {
+    font-size: $font-size + 2;
+    font-weight: 700;
+    text-transform: lowercase;
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      padding-left: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 30px;
+    }
+  }
+
+  &__link {
+
+  }
+}
