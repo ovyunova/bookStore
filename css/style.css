@@ -965,19 +965,17 @@ a {
   .delivery__inner:before {
     content: '';
     position: absolute;
-    top: -5%;
-    left: 50px;
-    background-color: #f5f5f5;
     width: 30%;
-    height: 50px; }
+    height: 50px;
+    top: -25px;
+    left: 50px;
+    background-color: #f5f5f5; }
     @media (min-width: 768px) {
       .delivery__inner:before {
-        width: 60%;
-        height: 20px; } }
+        width: 60%; } }
     @media (min-width: 1200px) {
       .delivery__inner:before {
-        width: 40%;
-        height: 20px; } }
+        width: 40%; } }
   .delivery__inner:after {
     content: '';
     position: absolute;
@@ -1415,6 +1413,17 @@ a {
     @media (min-width: 1200px) {
       .footer__inner {
         margin: 0 7%; } }
+    .footer__inner .time {
+      display: block;
+      position: absolute;
+      padding-top: 40px;
+      font-size: 14px;
+      color: #828282; }
+      @media (min-width: 768px) {
+        .footer__inner .time {
+          position: relative;
+          padding-top: 0;
+          margin-top: -3px; } }
   .footer__logo {
     display: block;
     padding-top: 20px; }
@@ -1422,42 +1431,26 @@ a {
       .footer__logo {
         padding-top: 0; } }
 
-.footer .time {
-  display: block;
-  position: absolute;
-  padding-top: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #828282; }
-  @media (min-width: 768px) {
-    .footer .time {
-      position: relative;
-      padding-top: 0;
-      margin-top: -3px; } }
-
 .footer-nav {
   margin-right: 0; }
   .footer-nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .footer-nav .visible {
+    display: block;
+    padding-top: 16px; }
+    @media (min-width: 768px) {
+      .footer-nav .visible {
+        padding-top: 0; } }
   .footer-nav__item {
-    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 700;
-    text-transform: lowercase; }
-    .footer-nav__item:first-child, .footer-nav__item:nth-child(2) {
-      display: none; }
-      @media (min-width: 768px) {
-        .footer-nav__item:first-child, .footer-nav__item:nth-child(2) {
-          display: block; } }
-    .footer-nav__item:last-child {
-      padding-top: 16px; }
-      @media (min-width: 768px) {
-        .footer-nav__item:last-child {
-          padding-top: 0; } }
+    text-transform: lowercase;
+    display: none; }
     @media (min-width: 768px) {
       .footer-nav__item {
+        display: block;
         padding-left: 20px; } }
     @media (min-width: 1200px) {
       .footer-nav__item {
